@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro & Racing Arcade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>PixelStream Games</h1>
+    </nav>
+
+    <div class="game-container">
+        <div class="game-card">
+            <img src="https://placehold.co/300x200?text=Polytrack+Thumbnail" alt="Polytrack">
+            <h3>Polytrack</h3>
+            <button onclick="launchGame('https://example-link-to-polytrack.com')">Play Now</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://placehold.co/300x200?text=Retro+Bowl+Thumbnail" alt="Retro Bowl">
+            <h3>Retro Bowl</h3>
+            <button onclick="launchGame('https://example-link-to-retro-bowl.com')">Play Now</button>
+        </div>
+    </div>
+
+    <div id="gameModal" class="modal">
+        <span class="close" onclick="closeGame()">&times;</span>
+        <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
